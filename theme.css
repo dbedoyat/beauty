@@ -1,0 +1,61 @@
+/* Custom Bootstrap Theme by Processoft
+*/
+
+
+:root {
+    --primary:#EC268F;
+    --secondary:#00BCAF;
+    --success: #28a745;
+    --danger: #dc3545;
+    --light:#707070;
+    --dark2:#333;
+    --shadowX: 2px 0px 20px 0 rgba(0,0,0,0.05);
+    --shadowY: 0 2px 20px 0 rgba(0,0,0,0.05);
+}     
+
+body{
+    font-family: "Nunito", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-rendering: optimizeLegibility;
+    background-color:#F5F5FA;
+    margin: 0;
+    color:#404040;
+    font-size: 16px;
+    font-display: auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.layoutApp {
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: var(--shadowX);
+
+}
+
+.layoutApp .logo {
+    padding: 16px;
+    width: 200px;
+    display: table-cell;
+}
+
+.layoutApp .logo img {
+    width: 100%;
+}
+
+.contentApp{
+    width:calc(100% - 200px);
+    position:fixed;
+    height:calc(100vh - 50px);
+    left:200px;
+    top:50px;
+}
